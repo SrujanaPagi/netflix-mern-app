@@ -15,7 +15,7 @@ export default function SubscribeModal({ plan, onClose }) {
     
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/subscribe", {
+      const res = await axios.post("https://netflix-backend-cmh1.onrender.com/api/subscribe", {
         userName: name,
         planName: plan.name,
         duration: 1
